@@ -1,6 +1,6 @@
 [package]
 name        = "decomp"
-version     = "0.1.2"
+version     = "0.1.3"
 description = "Components of a decompilation pipeline."
 authors     = [ "Totobird <https://github.com/Totobird-Creations>" ]
 license     = "Unlicense"
@@ -27,6 +27,7 @@ llvm-17 = [ "llvm-ir/llvm-17" ]
 llvm-18 = [ "llvm-ir/llvm-18" ]
 
 [package.metadata.docs.rs]
+no-default-features = true
 features = [ "llvm-10" ]
 
 
