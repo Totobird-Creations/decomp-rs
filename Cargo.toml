@@ -1,0 +1,35 @@
+[package]
+name        = "decomp"
+version     = "0.1.0"
+description = "Components of a decompilation pipeline."
+authors     = [ "Totobird <https://github.com/Totobird-Creations>" ]
+license     = "Unlicense"
+keywords    = [ "decompiler", "reverse-compiler", "control-flow", "analysis", "llvm" ]
+categories  = [ "compilers", "data-structures", "parsing" ]
+
+readme        = "README.md"
+repository    = "https://github.com/Totobird-Creations/decomp-rs"
+documentation = "https://docs.rs/decomp/latest/decomp/"
+
+edition = "2021"
+
+[features]
+default = [ "llvm-18" ]
+llvm-9  = [ "llvm-ir/llvm-9" ]
+llvm-10 = [ "llvm-ir/llvm-10" ]
+llvm-11 = [ "llvm-ir/llvm-11" ]
+llvm-12 = [ "llvm-ir/llvm-12" ]
+llvm-13 = [ "llvm-ir/llvm-13" ]
+llvm-14 = [ "llvm-ir/llvm-14" ]
+llvm-15 = [ "llvm-ir/llvm-15" ]
+llvm-16 = [ "llvm-ir/llvm-16" ]
+llvm-17 = [ "llvm-ir/llvm-17" ]
+llvm-18 = [ "llvm-ir/llvm-18" ]
+
+
+[dependencies.llvm-ir]
+version  = "0.11.1"
+
+
+[lints.rust]
+unused_parens = "allow"
