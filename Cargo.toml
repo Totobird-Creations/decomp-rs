@@ -1,6 +1,6 @@
 [package]
 name        = "decomp"
-version     = "0.1.3"
+version     = "0.1.4"
 description = "Components of a decompilation pipeline."
 authors     = [ "Totobird <https://github.com/Totobird-Creations>" ]
 license     = "Unlicense"

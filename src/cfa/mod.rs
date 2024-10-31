@@ -50,8 +50,7 @@ impl CFAPrim {
     pub fn find_all(mut cfg : ControlFlowGraph) -> Option<CFAPrims> {
         let mut prims = Vec::new();
         while (cfg.nodes().len() > 1) {
-            //println!("{}", cfg);
-            let mut prim = CFAPrim::find_first(&mut cfg).unwrap();
+            let mut prim = CFAPrim::find_first(&mut cfg)?;
             prim.merge(&mut cfg);
             prims.push(prim);
         }
